@@ -1,0 +1,15 @@
+git init
+git clone
+git log
+git push
+git pull
+git status
+git add <path>
+    this will stage all local changes to any files/folders at/under that path
+    usually "git add ." from the top-level repo folder
+    because "." in bash means, the current directory
+git config
+     git config --global user.email "llewellyn.speck@gmail.com"
+     git config --global user.name "Thomas Llewellyn"
+     git config --global -l
+        displays email, username, etc
