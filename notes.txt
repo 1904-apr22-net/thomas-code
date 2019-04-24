@@ -13,3 +13,8 @@ git config
      git config --global user.name "Thomas Llewellyn"
      git config --global -l
         displays email, username, etc
+git commit
+    git commit -m "actually added the git add notes"
+    steps, git add .
+        git commit or git commit -m "message"
+        git push

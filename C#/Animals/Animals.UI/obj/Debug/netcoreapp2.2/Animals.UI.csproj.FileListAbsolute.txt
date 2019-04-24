@@ -1,0 +1,14 @@
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.UI.deps.json
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.UI.runtimeconfig.json
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.UI.runtimeconfig.dev.json
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.UI.dll
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.UI.pdb
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.Library.dll
+C:\Revature\C#\Animals\Animals.UI\bin\Debug\netcoreapp2.2\Animals.Library.pdb
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.csprojAssemblyReference.cache
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.csproj.CoreCompileInputs.cache
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.AssemblyInfoInputs.cache
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.AssemblyInfo.cs
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.csproj.CopyComplete
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.dll
+C:\Revature\C#\Animals\Animals.UI\obj\Debug\netcoreapp2.2\Animals.UI.pdb

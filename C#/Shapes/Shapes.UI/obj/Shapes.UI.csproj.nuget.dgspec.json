@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
+        "projectName": "Shapes.Library",
+        "projectPath": "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj",
+        "packagesPath": "C:\\Users\\Chase Atkinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Revature\\C#\\Shapes\\Shapes.Library\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Chase Atkinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+        "projectName": "Shapes.UI",
+        "projectPath": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+        "packagesPath": "C:\\Users\\Chase Atkinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Chase Atkinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
+                "projectPath": "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.deps.json
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.runtimeconfig.json
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.runtimeconfig.dev.json
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.dll
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\bin\Debug\netcoreapp2.2\Calculator.UI.pdb
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.csprojAssemblyReference.cache
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.csproj.CoreCompileInputs.cache
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.AssemblyInfoInputs.cache
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.AssemblyInfo.cs
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.dll
+C:\Users\Chase Atkinson\source\repos\Calculator\Calculator.UI\obj\Debug\netcoreapp2.2\Calculator.UI.pdb
