@@ -1,0 +1,24 @@
+shell basics:
+    prompt: currently logged-in user, and computer name.
+    in yellow: current directory.
+    you are always in one directory at a time, given by the yellow indicator.
+    ~ is a special name for your home/user directory. (e.g. /c/Users/Revature)
+    we can use relative paths and absolute paths
+    special meaning of "..": the parent of the current directory.
+shell (bash) commands:
+    cd: change directory to whatever dir you give as argument.
+    ls: list contents of current directory.
+    mkdir: create a new folder
+    rm: remove files
+        with -r: remove folders and files
+
+git commands:
+    git clone <.git url>
+        creates a new local repository from GitHub.
+    git pull
+        to pull all new updates from GitHub since the last time you pulled.
+
+dotnet CLI notes:
+    dotnet new console --name HelloWorld
+        make a new project from the console app template
+        named HelloWorld.
