@@ -1,0 +1,11 @@
+C:\Revature\thomas-code\C#\Collections\Collections\bin\Debug\netcoreapp2.2\Collections.deps.json
+C:\Revature\thomas-code\C#\Collections\Collections\bin\Debug\netcoreapp2.2\Collections.runtimeconfig.json
+C:\Revature\thomas-code\C#\Collections\Collections\bin\Debug\netcoreapp2.2\Collections.runtimeconfig.dev.json
+C:\Revature\thomas-code\C#\Collections\Collections\bin\Debug\netcoreapp2.2\Collections.dll
+C:\Revature\thomas-code\C#\Collections\Collections\bin\Debug\netcoreapp2.2\Collections.pdb
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.csprojAssemblyReference.cache
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.csproj.CoreCompileInputs.cache
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.AssemblyInfoInputs.cache
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.AssemblyInfo.cs
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.dll
+C:\Revature\thomas-code\C#\Collections\Collections\obj\Debug\netcoreapp2.2\Collections.pdb
