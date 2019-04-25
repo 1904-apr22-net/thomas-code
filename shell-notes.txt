@@ -8,6 +8,8 @@ shell basics:
 shell (bash) commands:
     cd: change directory to whatever dir you give as argument.
     ls: list contents of current directory.
+        -1
+       -a shows hidden 
     mkdir: create a new folder
     rm: remove files
         with -r: remove folders and files

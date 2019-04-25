@@ -50,8 +50,13 @@ namespace Shapes.UI
             Console.WriteLine(r.Area);
 
             //BetterCircle Circle = new BetterCircle();
-            BetterCircle Circle = new NoisyCircle();
+            //BetterCircle Circle = new NoisyCircle();
+            NoisyCircle noisyCircle = new NoisyCircle();
+            BetterCircle Circle = noisyCircle; //upcasting
             Circle.Radius = 8;
+
+            noisyCircle.GetPerimeter();
+            Circle.GetPerimeter();
 
             Console.WriteLine();
 

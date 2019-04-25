@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+      "projectUniqueName": "C:\\Revature\\thomas-code\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
       "projectName": "Shapes.UI",
-      "projectPath": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
+      "projectPath": "C:\\Revature\\thomas-code\\C#\\Shapes\\Shapes.UI\\Shapes.UI.csproj",
       "packagesPath": "C:\\Users\\Chase Atkinson\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\C#\\Shapes\\Shapes.UI\\obj\\",
+      "outputPath": "C:\\Revature\\thomas-code\\C#\\Shapes\\Shapes.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -731,8 +731,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
-              "projectPath": "C:\\Revature\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj"
+            "C:\\Revature\\thomas-code\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj": {
+              "projectPath": "C:\\Revature\\thomas-code\\C#\\Shapes\\Shapes.Library\\Shapes.Library.csproj"
             }
           }
         }
