@@ -1,9 +1,0 @@
-C:\Revature\C#\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.deps.json
-C:\Revature\C#\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.dll
-C:\Revature\C#\Animals\Animals.Library\bin\Debug\netstandard2.0\Animals.Library.pdb
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.csprojAssemblyReference.cache
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.csproj.CoreCompileInputs.cache
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.AssemblyInfoInputs.cache
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.AssemblyInfo.cs
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.dll
-C:\Revature\C#\Animals\Animals.Library\obj\Debug\netstandard2.0\Animals.Library.pdb
