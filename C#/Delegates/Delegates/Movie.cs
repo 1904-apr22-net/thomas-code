@@ -1,11 +1,7 @@
-﻿using System;
-
-namespace Delegates
+﻿namespace Delegates
 {
     public class Movie
     {
         public string Name { get; set; }
-
-        
     }
 }
