@@ -8,9 +8,26 @@ namespace ExceptionPractice
         {
             Console.WriteLine("Hello World!");
 
-            CustomException testOne = new CustomException("does this work");
+            TestCatch();            
+        }
 
-            
+        private static void TestThrow()
+        {
+            CustomException example = new CustomException("Custome exception in TestThrow()");
+
+            throw example;
+        }
+        static void TestCatch()
+        {
+            try
+            {
+                TestThrow();
+
+            }
+            catch (CustomException example)
+            {
+                Console.WriteLine(example.ToString());
+            }
         }
     }
 }
