@@ -39,7 +39,7 @@ namespace Delegates
 
             moviePlayer.PlayFinished += handler4;
 
-            //moviePlayer.PlayFinished -= handler; // unsubscribe
+            // moviePlayer.PlayFinished -= handler; // unsubscribe
 
             moviePlayer.Play();
         }
