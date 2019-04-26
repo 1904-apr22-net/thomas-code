@@ -32,18 +32,7 @@ namespace CollectionTesting.Tests
             var value = c[0];
             Assert.Equal("abc", value);
         }
-        [Fact]
-        public void GetLongestStringWithEmptyShouleReturnNull()
-        {
-            // arrange
-            var c = new StringCollection();
 
-            // act
-            var result = c.GetLongestString();
-
-            // assert
-            Assert.Null(result);
-        }
 
         [Fact]
         public void isStringAlphabatizedShouldReturnFalse()
@@ -102,17 +91,30 @@ namespace CollectionTesting.Tests
             Assert.False(result);
         }
 
-        //  [Fact]
-        //  public void GetLongestStringShouldBeCorrect()
-        //  {
-        //      var c = new StringCollection();
-        //      c.Add("ab");
-        //      c.Add("abc");
+        [Fact]
+          public void GetLongestStringShouldBeCorrect()
+        {
+              var c = new StringCollection();
+              c.Add("ab");
+              c.Add("abc");
 
-        //      var result = c.GetLongestString();
+              var result = c.GetLongestString();
 
-        //      Assert.Equal("abc", result);
-        //   }
+              Assert.Equal("abc", result);
+           }
+
+        [Fact]
+        public void GetLongestStringWithEmptyShouldReturnNull()
+        {
+            // arrange
+            var c = new StringCollection();
+
+            // act
+            var result = c.GetLongestString();
+
+            // assert
+            Assert.Null(result);
+        }
 
         [Theory]
         [InlineData("abc", "abc", "ab")]
@@ -131,12 +133,12 @@ namespace CollectionTesting.Tests
             Assert.Equal(longest, result);
         }
 
-        //[Fact]
-        //public void RemoveShortestRemovesShortest()
-        //{
-        //    var c = new StringCollection();
-       //     c.RemoveShortest();
-        //}
+        [Fact]
+        public void RemoveShortestRemovesShortest()
+        {
+            var c = new StringCollection();
+            c.RemoveShortest();
+        }
 
 
     }

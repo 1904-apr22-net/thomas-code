@@ -81,6 +81,7 @@ namespace CollectionTesting.Library
             {
                 return null;
             }
+
             var maxLength = 0;
             string max = null;
             foreach (var item in List)
@@ -94,7 +95,21 @@ namespace CollectionTesting.Library
             return max;
         }
 
-        public static void OtherLINQ()
+        public void RemoveNotStartingWithP()
+        {
+            // LINQ prefers to return a new sequence instead of modify the old.
+            // "Where" filters the list and returns a new ienumerable
+            IEnumerable<string> newList = List.Where(x => x != null && char.ToUpper(x[0]) == 'P');
+            // the iteration has not happened yet
+            // ineumerable is not a list
+            List = newList.ToList();
+            // deferred execution: all the LINQ methods
+            // that return IEnumerable (as opposed to some concrete value)
+            // do not iterate YET.
+            // we "force" the iteration to happen when we want with ToList.
+        }
+
+        public void OtherLINQ()
         {
             // ALL
             // Any (true if ANY in collection is true for the condition)
@@ -133,7 +148,12 @@ namespace CollectionTesting.Library
             //                           a func mapping each element to some number
             //                           vvvvvvvvvv
             var maxLength = List.Max(x => x.Length);
+            // "first" returns the first element matching the condition
+            //     and throws exception if no results
+            // "firstordefault" returns null/default if no results.
 
+            //             a func mapping each element to true or false
+            //                vvvvvvvvvvvvvvvvvvvvvvvvvv
             return List.First(x => x.Length == maxLength);
         }
 
@@ -145,6 +165,9 @@ namespace CollectionTesting.Library
             set { List[index] = value; }
         }
 
-       
+        public double AverageLength() => List.Average(s => s.Length);
+
+
+        public void RemoveShortest() => throw new NotImplementedException();
     }  
 }
