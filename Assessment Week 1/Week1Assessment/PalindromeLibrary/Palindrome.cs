@@ -12,9 +12,9 @@ namespace PalindromeLibrary
                 return false;
             }
 
-            strInput.Remove(' ');
-            strInput.Remove(',');
-            strInput.Remove('.');
+            strInput = strInput.Replace(" ", "");
+            strInput = strInput.Replace(",", "");
+            strInput = strInput.Replace(".", "");
             strInput = strInput.ToLower();
             char[] input = strInput.ToCharArray();
 

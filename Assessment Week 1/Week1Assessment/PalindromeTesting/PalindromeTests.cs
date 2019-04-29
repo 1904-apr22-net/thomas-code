@@ -27,7 +27,7 @@ namespace PalindromeTesting
         {
             var c = new Palindrome();
 
-            bool palinResult = c.PalindromeTest(testInput);
+            var  palinResult = c.PalindromeTest(testInput);
 
             Assert.True(palinResult);
 
