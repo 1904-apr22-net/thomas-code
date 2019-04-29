@@ -17,7 +17,7 @@ namespace ExceptionPractice
 
             throw example;
         }
-        static void TestCatch()
+        public static void TestCatch()
         {
             try
             {
@@ -29,5 +29,11 @@ namespace ExceptionPractice
                 Console.WriteLine(example.ToString());
             }
         }
+
+        public static void TestFinally()
+        {
+            
+        }
+
     }
 }

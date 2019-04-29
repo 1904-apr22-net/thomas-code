@@ -1,8 +1,7 @@
 using Xunit;
 using System;
 using ExceptionTesting;
-
-
+using ExceptionPractice;
 
 namespace ExceptionTesting
 {
@@ -13,7 +12,9 @@ namespace ExceptionTesting
         public void ExceptTest1()
         {
 
-            var c = new CustomException();
+            var c = new CustomException("test");
+
+            Assert.Throws();
 
 
         }
