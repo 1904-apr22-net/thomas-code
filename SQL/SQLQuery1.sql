@@ -19,14 +19,15 @@ From SalesLT.SalesOrderDetail, SalesLT.SalesOrderHeader
 --Between '2009-01-01 00:00:00.000' AND '2009-12-31 00:00:00.000'
 
 Select Count(SalesOrderID), Sum(TotalDue), CountryRegion
-From SalesLT.SalesOrderHeader, SalesLT.Address
+From SalesLT.SalesOrderHeader
+Inner Join SalesLT.Address On SalesLT.SalesOrderHeader.ShipToAddressID = SalesLT.Address.AddressID
 Group by CountryRegion
 Order By Count(TotalDue) DESC
 
 
 
 Select *
-From SalesLT.SalesOrderHeader
+From SalesLT.Address
 --Order by SalesOrderID Desc
 
 Select TotalDue
