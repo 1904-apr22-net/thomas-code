@@ -98,7 +98,7 @@ WHERE Album.ArtistId NOT IN(
 	FROM Album
 		INNER JOIN Track ON Album.AlbumId = Track.AlbumId
 		INNER JOIN Genre ON Track.GenreId = Genre.GenreId
-	WHERE Genre.Name != 'Latin'
+	WHERE Genre.Name = 'Latin'
 	)
 
 
