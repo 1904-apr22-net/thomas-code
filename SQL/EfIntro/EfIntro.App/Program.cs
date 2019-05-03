@@ -1,11 +1,20 @@
 ﻿using EfIntro.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using System;
+using System.Linq;
 
 namespace EfIntro.App
 {
     class Program
     {
+        public static readonly LoggerFactory AppLoggerFactory
+             = new LoggerFactory(new[] 
+             {
+                 new ConsoleLoggerProvider((category_, level)
+                     => level >= LogLevel.Information, true)
+             });
         static void Main(string[] args)
         {
                  using (MovieDbContext dbContext = CreateDbContext())
@@ -31,22 +40,47 @@ namespace EfIntro.App
 
         private static void DeleteAMovie(MovieDbContext dbContext)
         {
-            throw new NotImplementedException();
+            Movie movie = dbContext.Movie
+                 .OrderByDescending(m => m.DateModified)
+                 .First();
+            dbContext.Remove(movie);
+            dbContext.SaveChanges();
         }
 
         private static void UpdateAMovie(MovieDbContext dbContext)
         {
-            throw new NotImplementedException();
+            Movie movie = dbContext.Movie
+                .OrderByDescending(m => m.DateModified)
+                .First();
+            movie.Active = !movie.Active;
+            dbContext.SaveChanges();
         }
 
         private static void AddAMovie(MovieDbContext dbContext)
         {
-            throw new NotImplementedException();
+            var actionGenre = dbContext.Genre.First(g => g.Name == "Action");
+
+            var movie = new Movie
+            {
+                Title = "Star Wars VIII",
+                ReleaseDate = new DateTime(2018, 1, 1),
+                Genre = actionGenre
+            };
+            dbContext.Movie.Add(movie);
+            try
+            {
+                dbContext.SaveChanges();
+            }
+           catch (DbUpdateException ex)
+            {
+                dbContext.Movie.Remove(movie);
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private static void PrintMovies(MovieDbContext dbContext)
         {
-            foreach (var movie in dbContext.Movie)
+            foreach (var movie in dbContext.Movie.Include(m => m.Genre))
             {
                 Console.WriteLine($"{movie.MovieId}: {movie.Title} ({movie.ReleaseDate.Year})");
             }
@@ -56,7 +90,10 @@ namespace EfIntro.App
         private static MovieDbContext CreateDbContext()
         {
             var optionsBuilder = new DbContextOptionsBuilder<MovieDbContext>();
-            optionsBuilder.UseSqlServer(SecretConfiguration.ConnectionString);
+            optionsBuilder
+                .UseSqlServer(SecretConfiguration.ConnectionString)
+                .UseLoggerFactory(AppLoggerFactory); //comment this out when presenting project
+
             return new MovieDbContext(optionsBuilder.Options);
         }
     }
