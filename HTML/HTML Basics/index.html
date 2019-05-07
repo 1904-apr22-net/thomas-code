@@ -1,0 +1,241 @@
+<!-- this is how do do comments
+when typing html, select html:5 -->
+
+<!-- the document type declaration
+this doctype is necessary to have the browser interpret this document as html 5-->
+
+<!DOCTYPE html>  
+
+<!-- html: root element -->
+<html lang="en">
+    <!-- the head element, for general page metadata -->
+
+<head>
+    <!-- most metadata uses "meta" element with different attributes -->
+    <!-- declaring the character encoding of this file to be UTF-8 (unicode) -->
+    <meta charset="UTF-8">
+    <!-- stting initial viewport on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- the name of the tab / window / bookmark -->
+    <title>Document</title>
+    <!-- some things that we used to put in the head tag -->
+    <!-- <meta name = "application-name" content = ""> -->
+    <!-- the author -->
+    <!-- description - used to be used heavily by search engines -->
+    <!-- keywords also -->
+    <!-- robots - for programs that crawl the web -->
+
+    <!-- also in the head tag we link to CSS stylesheet files 
+        and to java Script files -->
+</head>
+    <!-- the body element, for the page content -->
+<body>
+    Hello
+    <!-- html does not care about whitespace -->
+    world
+
+    <!-- paragraph element -->
+    <p>paragraph 1</p><p>paragraph 2</p>
+
+    <!-- section headers 1-6 -->
+    <h1>Biggest Header</h1>
+    <h6>Smallest Header</h6>
+
+ <!--the image element  -->
+ <!-- uses src attribute to point to a web address -->
+ <img src = "https://i.redd.it/ezzbfispdqw21.jpg"
+ width = "500px"/>
+
+  <!-- self closing tag -->
+
+    <!-- uses src attribute to point to a picture in a folder on my machine -->
+    <img src = "C:\Users\Chase Atkinson\Desktop\k9iu0aez9fu21.png"
+    width = "500px" alt = "put this text if the image cant be seen">
+
+  
+
+    <!-- for links, we have the anchor element -->
+    <a href = "http://google.com"
+    target="_blank" >Google</a>
+    <!-- target="_blank" for opening in a new tab. -->
+
+        <!-- lists -->
+        <!-- ordered list -->
+    <ol>
+         <!-- list item -->
+        <li>Seattle</li>
+        <li>Dallas</li>
+        <li>Cadia</li>
+    </ol>
+        <!-- nested lists are allowed -->
+
+        <!-- unordered list -->
+    <ul>
+        <li>Baltimore</li>
+        <li>Buffalo</li>
+        <li>Krieg</li>
+    </ul>
+
+<!-- definition list (dl) -->
+<!-- some formatting tags -->
+
+<p>
+    we have <strong>Strong</strong> text. (bold by default)
+    we have <em>emphasis</em> text (itallic by default)
+    we have <u>underlined</u> text
+</p>
+
+<blockquote>
+    for paragraphs that are quotations
+</blockquote>
+
+        <!-- when there's not a pre-existing -->
+        <!-- element to describe what we want -->
+<div id = "first_div"> 
+    <!-- generic block element -->
+    div 1
+</div>
+<div class = "testing">
+    div 2
+</div>
+
+<span>
+    <!-- generic inline -->
+    span 1
+</span>
+<span>
+    spand 2
+</span>
+
+ <!-- line break -->
+<!-- (not good practice to use for vertical spacing) -->
+<br>
+
+<!-- global attributes -->
+<!-- id, class -->
+
+<table>
+    <thread>
+        <tr>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+    </thread>
+    <tbody>
+        <tr>
+            <td>Dallas</td>
+            <td>Texas</td>
+        </tr>
+        <tr>
+            <td>Cadia</td>
+            <td>Destroyed/Blown Up</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- thre are ways to escape characters in HTML
+        this means   -->
+<p>
+    &lt;p&gt;
+    &copy;
+    <!-- "named" character references -->
+</p>
+
+<!-- we also have numeric character references -->
+<!-- decimal Unicode codepoint -->
+&#4624;
+<!-- hexadecimal Unicode codepoint -->
+&#xb3fa;
+
+<!-- but because this is UTF-8 document, we can just write them in the code -->
+ሐ 돺
+<!-- we dont need to use character referencces, except it's good for whitespace characters -->
+
+<!-- new elements added by HTML 5 -->
+<!-- main secction of your page -->
+<main></main>
+<!-- one of several articcles -->
+<article></article>
+<!-- one of several sections -->
+<article></article>
+<header></header>
+<footer></footer>
+<!-- sidebar -->
+<aside></aside>
+<!-- a panel or section that have navigation links to other pages -->
+<nav></nav>
+
+<div class = "navigation-bar"></div>
+
+<audio></audio>
+<video></video>
+<canvas></canvas>
+
+<!-- forms -->
+<!-- forms submit data to some URL -->
+<!-- they have various inputs -->
+<!-- and some way to submit -->
+    <form action= "https://google.com/search"
+    method="GET" target="_blank">
+        <input typ= "text" name="q">
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <div>
+    <form action="#" method = "POST">
+<!-- name is for the name of the data sent to the server. -->
+                <!-- id is the name of this element within the HTML page. -->
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname">
+
+                <label>
+                    Last name:
+                    <input type="text" name="lastname"
+                     required maxlength="30">
+                     <!-- minlength, pattern -->
+                     <!-- required="required" means, empty string not allowed. -->
+                </label>
+
+                <input type="number" name="age" placeholder="Age">
+
+                <input type="checkbox">
+                <input type="password">
+
+                <label>
+                    Seattle
+                    <input type="radio" name="city" value="seattle">
+                </label>
+                <label>
+                    DC
+                    <input type="radio" name="city" value="dc">
+                </label>
+                <label>
+                    Dallas
+                    <input type="radio" name="city" value="dallas">
+                </label>
+                <!-- this will result in sending form data -->
+                <!-- city=dallas -->
+
+                <!-- select element is for dropdown lists -->
+                <select name="city2">
+                    <option value="seattle">Seattle</option>
+                    <option value="dc">DC</option>
+                </select>
+
+                <input type="hidden" name="asdf" value="value">
+                <!-- hidden fields are just sent back
+                to the server with the rest -->
+
+                <!-- form control for multiline text input -->
+                <textarea></textarea>
+
+                <input type="datetime-local">
+                <input type="color">
+                <input type="file">
+                <input type="submit">
+    </form>
+</div>
+</body>
+</html>
