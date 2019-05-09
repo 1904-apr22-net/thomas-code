@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MovieApp.BL
 {
-    interface IMovieRepository
+    public interface IMovieRepository
     {
         IEnumerable<Movie> GetAll();
         void Create(Movie movie);

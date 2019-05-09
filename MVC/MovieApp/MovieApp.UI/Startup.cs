@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MovieApp.BL;
+using MovieApp.DA;
 
 namespace MovieApp.UI
 {
@@ -30,7 +32,19 @@ namespace MovieApp.UI
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            services.AddScoped<IMovieRepository, MovieRepository>();
 
+            var actionGenre = new Genre { Id = 1, Name = "Action" };
+            services.AddSingleton(new List<Movie>
+            {
+                new Movie
+                {
+                    Id = 1,
+                    Title = "Die Hard",
+                    ReleaseDate = new DateTime(1988, 1, 1),
+                    Genre = actionGenre
+                }
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

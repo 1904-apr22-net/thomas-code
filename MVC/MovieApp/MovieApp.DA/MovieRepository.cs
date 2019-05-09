@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using MovieApp.BL;
 
 namespace MovieApp.DA
 {
-    class MovieRepository : IMovieRepository
+    public class MovieRepository : IMovieRepository
     {
         private readonly List<Movie> _data;
 
@@ -18,7 +20,12 @@ namespace MovieApp.DA
             return _data;
         }
 
-        public IEnumerable<Movie>
+        public void Create(Movie movie)
+        {
+            var id = _data.Max(x => x.Id) + 1;
+            movie.Id = id;
+            _data.Add(movie);
+        }
 
     }
 }

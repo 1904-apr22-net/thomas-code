@@ -12,4 +12,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieApp.BL\MovieApp.BL.csproj" />
+    <ProjectReference Include="..\MovieApp.DA\MovieApp.DA.csproj" />
+  </ItemGroup>
+
 </Project>
