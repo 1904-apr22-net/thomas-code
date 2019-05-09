@@ -20,6 +20,16 @@ namespace MovieApp.DA
             return _data;
         }
 
+        public IEnumerable<Genre> GetAllGenres()
+        {
+            return _data.Select(m => m.Genre).OrderBy(g => g.Id);
+        }
+
+        public Genre GetGenreById(int id)
+        {
+            return GetAllGenres().FirstOrDefault(g => g.Id == id);
+        }
+
         public void Create(Movie movie)
         {
             var id = _data.Max(x => x.Id) + 1;

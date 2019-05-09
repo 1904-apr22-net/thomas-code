@@ -28,11 +28,7 @@ namespace MovieApp.UI.Controllers
                 Id = m.Id,
                 Title = m.Title,
                 DateReleased = m.ReleaseDate,
-                Genre = new GenreViewModel
-                {
-                    Id = m.Genre.Id,
-                    Name = m.Genre.Name
-                }
+                Genre = m.Genre
             });
 
             return View(model);
@@ -40,7 +36,46 @@ namespace MovieApp.UI.Controllers
 
         public IActionResult Create()
         {
+            var viewModel = new MovieViewModel
+            {
+                Genres = MovieRepo.GetAllGenres().ToList()
+            };
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(MovieViewModel viewModel)
+        {
+            if (viewModel.Title == "Star Wars: The Last Jedi")
+            {
+                ModelState.AddModelError("Title", "The movie was bad");
+
+                ModelState.AddModelError("", "There were some errors");
+            }
+
+            Genre genre = null;
+            if (viewModel.Genre != null)
+            {
+                genre = MovieRepo.GetGenreById(viewModel.Genre.Id);
+                if (genre == null)
+                {
+                    ModelState.AddModelError("Genre", "Invalid genre ID");
+                }
+            }
+
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = MovieRepo.GetAllGenres().ToList();
+                return View(viewModel);
+            }
+            var movie = new Movie
+            {
+                Title = viewModel.Title,
+                ReleaseDate = viewModel.DateReleased,
+                Genre = genre
+            };
+            MovieRepo.Create(movie);
+            return RedirectToAction("Index");
         }
     }
 }
