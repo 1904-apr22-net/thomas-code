@@ -13,8 +13,14 @@ namespace MySoapConsumer
         {
             using (var client = new UnitConversionServiceClient())
             {
-
+                client.Open();
+                Console.WriteLine("Enter the measurement in feet to be converted to meters ");
+                var feet = int.Parse(Console.ReadLine());
+                var meters = client.FeetToMeters(feet);
+                Console.WriteLine($"Result is: {meters}");
+                client.Close();
             }
+            Console.ReadKey();
         }
     }
 }
